@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <a href="#"><img src="img/logo.png" class ="logo" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a  href="index.html"> Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="blog.html"> Blog</a></li>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="single-pro-details">
+                <h6>Shirts</h6>
+                <h4>Men's Fashion</h4>
+                <h2>Rs.699</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add to Cart</button>
+                <h4>Details</h4>
+                <span>Shirt made of pure cotton. Half sleeves. Button closure</span>
+            </div>
+        </section>
+        <section id="product1" class="section-p1">
+            <h2>New Arrivals</h2>
+            <p>
+                Grab your piece
+            </p>
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="img/products/n1.jpg" alt="">
+                    <div class="des">
+                        <span>Vero Moda</span>
+                        <h5>Light Blue Shirt</h5>
+                        <h4>Rs.699</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/n2.jpg" alt="">
+                    <div class="des">
+                        <span>Vero Moda</span>
+                        <h5>Grey Shirt</h5>
+                        <h4>Rs.699</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/n3.jpg" alt="">
+                    <div class="des">
+                        <span>Vero Moda</span>
+                        <h5>White Shirt</h5>
+                        <h4>Rs.699</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="img/products/n4.jpg" alt="">
+                    <div class="des">
+                        <span>Vero Moda</span>
+                        <h5>Light Green Shirt</h5>
+                        <h4>Rs.699</h4>
+                    </div>
+                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- <script>
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                var results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            }
+            // Set the main image based on URL parameter
+            window.onload = function() {
+                var imgSrc = getUrlParameter('img');
+                if (imgSrc) {
+                    document.getElementById('MainImg').src = imgSrc;
+                }
+            };
+
+            var MainImg= document.getElementById("MainImg")
+            var smallimg= document.getElementsByClassName("small-img")
+           smallimg[0].onclick = function(){
+            MainImg.src= smallimg[0].src
+           }
+           smallimg[1].onclick = function(){
+            MainImg.src= smallimg[1].src
+           }
+           smallimg[2].onclick = function(){
+            MainImg.src= smallimg[2].src
+           }
+           smallimg[3].onclick = function(){
+            MainImg.src= smallimg[3].src
+           }
+        </script> -->
+        <script src="script.js"></script>
+    </body>
+
+</html>
